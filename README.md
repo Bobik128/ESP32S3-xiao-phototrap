@@ -21,6 +21,7 @@ For the printing, I used PLA, because its the eazyest to print from, but if you 
 **Electronics**<br/>
 ESP32S3 XIAO sense with camera board<br/>
 OV3660 camera with cable long around 21mm (OV2640 wont work reliably since it cannot enter standby mode and will take huge amounts of current -> 20mA instead of like 0.3mA, for OV5640 not tested)<br/>
+2.4GHz antenna
 IR LED on 20mm star cool pad with ideally 850nm<br/>
 LiPol battery, specificaly 954060 3000mAh 1s/3.7v <br/>
 some connector for the battery for DPS, I used JST XH 2.54mm<br/>
@@ -41,6 +42,7 @@ now for the led combination, you have to use higher power resistors (1W) and use
 some DPS board to put it on, size doesnt matter since youll have to chop it to exact size
 
 ## Build process
+### PIR
 First of all, we'll have to modify the pir sensor, since it takes in 4.5-20v which is not ideal, so we need to remove the 3.3v regulator and a diode and replace them with some piece of cable or solder like this:
 
 
@@ -51,3 +53,36 @@ First of all, we'll have to modify the pir sensor, since it takes in 4.5-20v whi
 
 now it can accept 3.3v
 
+### IR LED
+<p align="center">
+  <img src="images/ir-led.webp" width="400"/>
+</p>
+
+now for the IR led, you'll have to solder some cables one side of the led, so + and -<be/>
+I think you have already noticed the ir led slot, but befor you snap it in, there is also a slot for a M2 nut, so place that there first and then pop in the IR LED
+
+### ESP
+For the esp, first, split it in separate peaces (main board, expansion board, camera and antenna)
+
+first connect antenna to the main board
+
+then slide the camera into the slot for the camera
+
+then while the cammera is in the slot, connect it to the expansion board
+
+then put the main oard to the top most slot and start sliding it in, while you're sliding it in, connect it to the expansion board
+
+now put the antenna cable to the antenna calbe slot
+
+secure the whole thing by screwing it in the bracket behind esp (or glue it)
+
+### Main board
+this is the trickiest part, because you have to assemble the board yourself
+
+it doesnt really matter how you solder it on to it, except for switches, leds and the battery connector, for details check the onshape cad mentioned above<br/>
+and also the board size should be around 3.2 x 3.3 cm, but trim it as needed
+
+this is the circuit I have used:
+<a href="images/Phototrap circuit.pdf">
+  <img src="images/circuit preview.png" width="600">
+</a>
