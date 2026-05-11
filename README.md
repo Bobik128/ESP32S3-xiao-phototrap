@@ -27,11 +27,16 @@ It includes 2 languages -> czech and english
 **error led** lights up, when there is a critical error, usually sd card not inserted or broken, but can indicate also camera error, when this happens, the esp will also create wifi and show, what caused the error on its website
 
 ### operation
+When you move in front of the phototrap while detect switch is on, it will start recording and will record til you'll be moving
+
 When its idle, it will draw aroud 0.3mA, which will last for over a year with 10Wh battery, it will wake only if there is a movement, or when the maintanance pin is high
 
 to download the recorded videos, you can get them straight from sd card, or download them trough the web (notice: videos are encoded in a format, that is not natively supported on mobile phoes, so use VLC player app)
 
 you can set the motion detection sensitivity trough side of the phototrap, where there are 2 potentiometers, one for sensitivity and one for how long will the detection signal last
+
+### Millacenous
+there are 4 possible back versions -> battery/no battery; gopro mountno gopro mount
 
 # Build process
 ### Now for the parts you'll need, here is a list:
