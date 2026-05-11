@@ -268,7 +268,7 @@ Trim it as necessary.
 ## Circuit Diagram
 
 <a href="images/Phototrap circuit.pdf">
-  <img src="images/circuit preview.png" width="600">
+  <img src="images/circuit preview.png" width="100%">
 </a>
 
 ---
