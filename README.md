@@ -1,6 +1,10 @@
 # ESP32S3-xiao-phototrap
 ESP32S3 xiao phototrap project
 
+<p align="center">
+  <img src="images/20260511_170619.jpg" width="500"/>
+</p>
+
 In here, I will show you, how to create the phootrap step by step
 
 first of all, you need to print the parts, the files are located in cad directory or [here](https://cad.onshape.com/documents/ead58119c3828b68d815a62f/w/7087faa25839fe28733057f0/e/a371d4849fa89fe6a0035750) on onshape
@@ -35,3 +39,15 @@ NPN tranzistor, ideally 2N2222<br/>
 now for the led combination, you have to use higher power resistors (1W) and use some combination between 8 and 10 ohms, so 2R2 and 6R8 is ok
 
 some DPS board to put it on, size doesnt matter since youll have to chop it to exact size
+
+## Build process
+First of all, we'll have to modify the pir sensor, since it takes in 4.5-20v which is not ideal, so we need to remove the 3.3v regulator and a diode and replace them with some piece of cable or solder like this:
+
+
+<p align="center">
+  <img src="images/IMG-20260507-WA0014.jpeg" width="350"/>
+  <img src="images/IMG-20260507-WA0016.jpeg" width="350"/>
+</p>
+
+now it can accept 3.3v
+
