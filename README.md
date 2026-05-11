@@ -86,3 +86,15 @@ this is the circuit I have used:
 <a href="images/Phototrap circuit.pdf">
   <img src="images/circuit preview.png" width="600">
 </a>
+
+and this is how I put it together:
+<p align="center">
+  <img src="images/Phototrapsomtin.png" width="350"/>
+  <img src="images/20260511_151046.jpg" width="350"/>
+  <img src="images/20260511_150215.jpg" width="350"/>
+</p>
+
+### Finalizing
+Then you just put it all together, connect all wires according ot the schema and you're ready to upload
+
+open the .ino file in arduino ide (first you need to put hte file to a folder with same name as is the file), istall teh esp32 extension, **enable PS ram**, select the right board and select the right flash storage size (8MB)
