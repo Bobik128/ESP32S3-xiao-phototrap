@@ -10,6 +10,30 @@ In here, I will show you, how to create the phootrap step by step
 first of all, you need to print the parts, the files are located in cad directory or [here](https://cad.onshape.com/documents/ead58119c3828b68d815a62f/w/7087faa25839fe28733057f0/e/a371d4849fa89fe6a0035750) on onshape
 For the printing, I used PLA, because its the eazyest to print from, but if you need it for outside, I would consider using ASA
 
+# Features
+There are 3 switches on it:<br/>
+Maintanance<br/>
+detect<br/>
+debug<br/>
+
+**Maintanance** turns on the maintanance mode, in this mode, the esp will turn on wifi and allow you to connect to it. Then acces teh wib by typing 192.168.4.1 to the browser and you're there, here, you can modify the settings (password, ssid, camera settings), view live stream, turn on the IR LED, monitor battery level and so on
+
+It includes 2 languages -> czech and english
+
+**detect switch** turns on the detection, so when the pir detects a movement, if this is on, the esp will start recording automatically
+
+**Debug switch** just turns on the led below it, which indicates, if there is a movement
+
+**error led** lights up, when there is a critical error, usually sd card not inserted or broken, but can indicate also camera error, when this happens, the esp will also create wifi and show, what caused the error on its website
+
+### operation
+When its idle, it will draw aroud 0.3mA, which will last for over a year with 10Wh battery, it will wake only if there is a movement, or when the maintanance pin is high
+
+to download the recorded videos, you can get them straight from sd card, or download them trough the web (notice: videos are encoded in a format, that is not natively supported on mobile phoes, so use VLC player app)
+
+you can set the motion detection sensitivity trough side of the phototrap, where there are 2 potentiometers, one for sensitivity and one for how long will the detection signal last
+
+# Build process
 ### Now for the parts you'll need, here is a list:
 
 **Screws and nuts**<br/>
@@ -41,7 +65,6 @@ now for the led combination, you have to use higher power resistors (1W) and use
 
 some DPS board to put it on, size doesnt matter since youll have to chop it to exact size
 
-## Build process
 ### PIR
 First of all, we'll have to modify the pir sensor, since it takes in 4.5-20v which is not ideal, so we need to remove the 3.3v regulator and a diode and replace them with some piece of cable or solder like this:
 
