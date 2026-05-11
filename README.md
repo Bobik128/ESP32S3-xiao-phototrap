@@ -126,3 +126,14 @@ and this is how I put it together:
 Then you just put it all together, connect all wires according ot the schema and you're ready to upload
 
 open the .ino file in arduino ide (first you need to put hte file to a folder with same name as is the file), istall teh esp32 extension, **enable PS ram**, select the right board and select the right flash storage size (8MB)
+
+in the program also check the pins, so they match your build (they are GPIO, not the D#):<br/>
+```
+static const int PIR_PIN    = 4;
+static const int MAINT_PIN  = 3;
+static const int IR_LED_PIN = 2;
+static const int ERROR_PIN  = 5;
+
+// Battery measurement on GPIO1 through 1/2 voltage divider
+static const int BAT_ADC_PIN = 1;
+```
