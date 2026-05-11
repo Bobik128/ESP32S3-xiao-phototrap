@@ -10,7 +10,7 @@ This guide shows how to build the phototrap step by step.
 
 First, print all required parts. The files are located in the `cad` directory or on [Onshape](https://cad.onshape.com/documents/ead58119c3828b68d815a62f/w/7087faa25839fe28733057f0/e/a371d4849fa89fe6a0035750).
 
-> https://cad.onshape.com/documents/ead58119c3828b68d815a62f/w/7087faa25839fe28733057f0/e/a371d4849fa89fe6a0035750?renderMode=0&uiState=6a022a96cfd309d4018aba32
+> https://cad.onshape.com/documents/ead58119c3828b68d815a62f/w/7087faa25839fe28733057f0/e/a371d4849fa89fe6a0035750
 > 
 > if it doesnt work, just copy the url and put it in browser manually
 
