@@ -276,6 +276,7 @@ Trim it as necessary.
 ## PCB Assembly Example
 
 <p align="center">
+  <img src="images/phototrapsomtin.png" width="350"/>
   <img src="images/20260511_151046.jpg" width="350"/>
   <img src="images/20260511_150215.jpg" width="350"/>
 </p>
